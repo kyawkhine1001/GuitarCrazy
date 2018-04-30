@@ -1,0 +1,67 @@
+<resources>
+    <string name="app_name">Guitar Crazy</string>
+
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+
+    <string name="action_settings">Settings</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+
+
+    <!--tuner-->
+    <string name="pref_dark_theme_key" translatable="false">pref_dark_theme</string>
+    <string name="pref_dark_theme_title">Dark theme</string>
+    <string name="pref_tuning_key" translatable="false">pref_tuning</string>
+    <string name="pref_tuning_title">Tuning</string>
+
+
+    <!-- Tuning names -->
+    <string name="standard_tuning">Standard</string>
+    <string name="open_a_tuning">Open A</string>
+    <string name="open_g_tuning">Open G</string>
+    <string name="open_d_tuning">Open D</string>
+    <string name="drop_d_tuning">Drop D</string>
+
+    <string name="standard_tuning_val" translatable="false">Standard</string>
+    <string name="open_a_tuning_val" translatable="false">Open A</string>
+    <string name="open_g_tuning_val" translatable="false">Open G</string>
+    <string name="open_d_tuning_val" translatable="false">Open D</string>
+    <string name="drop_d_tuning_val" translatable="false">Drop D</string>
+
+    <string-array name="pref_tuning_entries">
+        <item>@string/standard_tuning</item>
+        <item>@string/open_a_tuning</item>
+        <item>@string/open_g_tuning</item>
+        <item>@string/open_d_tuning</item>
+        <item>@string/drop_d_tuning</item>
+    </string-array>
+
+    <string-array name="pref_tuning_values">
+        <item>@string/standard_tuning_val</item>
+        <item>@string/open_a_tuning_val</item>
+        <item>@string/open_g_tuning_val</item>
+        <item>@string/open_d_tuning_val</item>
+        <item>@string/drop_d_tuning_val</item>
+    </string-array>
+    <string name="permission">Permission</string>
+    <string name="permission_record_audio">The app must be able to use the microphone.</string>
+    <string name="audio_record_init_error">Could not initialize AudioRecord.</string>
+
+    <string name="aboutus">This application will help you to learn about guitar playing.
+        You can look up song lyrics with guitar chords and
+        you can see guitar chords with categories of chord titles.
+        You can tune guitar sounds in application.
+\n\n\n
+        Developed By:\n
+        Kyaw Kyaw Khing\n
+        Mobile Developer Immersive(WSP_B2)
+        \n\n\n
+        Reference:\n
+        Kyaw San Lan(BasicRhythmGuitar)
+        \n\n\n
+    </string>
+
+
+</resources>

@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v7.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:cardview="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginBottom="1dp"
+    android:layout_marginLeft="2dp"
+    android:layout_marginRight="2dp"
+    android:clickable="true"
+    android:foreground="@drawable/ripple_effect_bg"
+    android:gravity="center"
+    cardview:cardCornerRadius="5dp">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_vertical"
+        android:background="#ffffff">
+
+        <ImageView
+            android:id="@+id/ivLesson"
+            android:layout_width="80dp"
+            android:layout_height="80dp"
+            android:layout_centerVertical="true"
+            android:padding="5dp"
+            android:scaleType="fitXY"
+            android:src="@mipmap/ic_launcher" />
+
+        <TextView
+            android:id="@+id/lessontitle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="5dp"
+            android:layout_toRightOf="@id/ivLesson"
+            android:text="blog name"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:textColor="#6c6c6c" />
+
+        <TextView
+            android:id="@+id/lessoncontent"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/lessontitle"
+            android:layout_marginLeft="5dp"
+            android:layout_toEndOf="@id/ivLesson"
+            android:layout_toRightOf="@id/ivLesson"
+            android:lines="3"
+            android:text="Small Text"
+            android:textAppearance="?android:attr/textAppearanceSmall"
+            android:textColor="#666" />
+
+        <!--<View-->
+        <!--android:layout_width="match_parent"-->
+        <!--android:layout_height="1dp"-->
+        <!--android:layout_below="@+id/ivLesson"-->
+        <!--android:layout_margin="5dp"-->
+        <!--android:background="#999595" />-->
+
+    </RelativeLayout>
+</android.support.v7.widget.CardView>

@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:context="com.example.kcube.guitarcrazy.MainActivity"
+    tools:showIn="@layout/app_bar_main">
+
+    <!--<ImageView-->
+    <!--android:layout_width="match_parent"-->
+    <!--android:layout_height="300dp"-->
+    <!--android:scaleType="fitXY"-->
+    <!--android:src="@drawable/guitar1" />-->
+    <android.support.v4.view.ViewPager
+        android:id="@+id/viewpager"
+        android:layout_width="match_parent"
+        android:layout_height="250dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:background="#58807d"
+        tools:listitem="@layout/pager_item" />
+
+    <RelativeLayout
+        android:id="@+id/viewPagerIndicator"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_above="@+id/categorylayout"
+        android:layout_below="@+id/viewpager"
+        android:background="#263534"
+        android:gravity="center">
+
+        <LinearLayout
+            android:id="@+id/viewPagerCountDots"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_centerHorizontal="true"
+            android:gravity="center"
+            android:orientation="horizontal" />
+
+    </RelativeLayout>
+    <!--<me.relex.circleindicator.CircleIndicator-->
+    <!--android:id="@+id/indicator"-->
+    <!--android:layout_width="match_parent"-->
+    <!--android:layout_height="48dp"-->
+    <!--app:ci_animator="@animator/scale_with_alpha"-->
+    <!--android:layout_above="@+id/categorylayout" />-->
+
+    <LinearLayout
+        android:id="@+id/categorylayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:background="#ffffff">
+
+        <GridView
+            android:id="@+id/gview"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:fitsSystemWindows="true"
+            android:layout_marginTop="-10dp"
+            android:gravity="center"
+            android:numColumns="2"
+            android:padding="0dp"
+            android:stretchMode="columnWidth"
+            android:textFilterEnabled="true">
+
+        </GridView>
+    </LinearLayout>
+</RelativeLayout>

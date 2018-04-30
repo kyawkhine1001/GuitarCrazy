@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!--<color name="colorPrimary">#795548</color>-->
+    <!--<color name="colorPrimaryDark">#5D4037</color>-->
+    <color name="colorAccent">#FFAB40</color>
+
+    <color name="colorPrimary">#DF992F</color>
+    <color name="colorPrimaryDark">#916421</color>
+    <!--<color name="colorAccent">#FFAB40</color>-->
+
+    <!--<color name="colorPrimary">#FFC170</color>-->
+    <!--<color name="colorPrimaryDark">#FFA000</color>-->
+
+
+    <color name="needleViewSmallTicksColorDark">#ffffff</color>
+    <color name="needleViewBigTicksColorDark">#ffffff</color>
+    <color name="needleViewSmallTicksColorLight">#757575</color>
+    <color name="needleViewBigTicksColorLight">#212121</color>
+    <color name="tuningItemNormalColor">#CCCCCC</color>
+    <color name="tuningItemSelectedColor">#FFFFFF</color>
+</resources>

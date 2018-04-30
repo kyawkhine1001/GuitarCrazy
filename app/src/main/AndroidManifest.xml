@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.kcube.guitarcrazy">
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.RECORD_AUDIO" />
+
+    <application
+        android:name=".GuitarCrazy"
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <activity
+            android:name=".MainActivity"
+            android:label="@string/app_name"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme.NoActionBar">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".ChordActivity"
+            android:parentActivityName=".MainActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/Theme.AppCompat.Light.NoActionBar" />
+        <activity
+            android:name=".ChordDetailActivity"
+            android:label="Chord Detail"
+            android:parentActivityName=".ChordActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".LyricActivity"
+            android:label="Lyrics"
+            android:parentActivityName=".LyricActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".SongLyricsActivity"
+            android:label="Song Lyrics"
+            android:parentActivityName=".LyricActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".LessonActivity"
+            android:label="Lessons"
+            android:parentActivityName=".MainActivity"
+            android:screenOrientation="portrait" />
+        <!-- <activity -->
+        <!-- android:name=".TunerActivity" -->
+        <!-- android:label="Tuner" -->
+        <!-- android:parentActivityName=".MainActivity" /> -->
+        <activity
+            android:name=".LessonDetailActivity"
+            android:parentActivityName=".LessonActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".tuner.TunerActivity"
+            android:label="Guitar Tuner"
+            android:parentActivityName=".MainActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".tuner.SettingsActivity"
+            android:label="Settings"
+            android:parentActivityName=".tuner.TunerActivity"
+            android:screenOrientation="portrait">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="tuner.TunerActivity" />
+        </activity>
+        <activity
+            android:name=".LyricShowActivity"
+            android:parentActivityName=".SongLyricsActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".FavouriteActivity"
+            android:label="Favourite"
+            android:parentActivityName=".MainActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".AboutActivity"
+            android:parentActivityName=".MainActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".SearchSingerActivity"
+            android:parentActivityName=".LyricActivity"
+            android:screenOrientation="portrait" />
+    </application>
+
+</manifest>

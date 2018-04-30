@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="horizontal">
+
+    <AutoCompleteTextView
+        android:id="@+id/edtSearch"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_vertical"
+        android:background="@drawable/action_bar_bg"
+        android:fitsSystemWindows="true"
+        android:gravity="fill"
+        android:hint="Enter singers or songs"
+        android:imeOptions="actionSearch"
+        android:inputType="text" />
+</LinearLayout>
